@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1b1f;
+  padding-top: 3rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #1f2125f7;
+}
+
+.appDiv {
+  display: flex;
+  height: 80vh;
+}
+
+.musicList {
+  border-right: 1px solid #747474;
+}
+
+.MusicListDiv {
+  overflow: scroll;
+  margin-top: 1rem;
+}
+
+.musicList > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  border-bottom: 1px solid #747474;
+  padding: 0 1rem;
+}
+
+.musicList > div > img {
+  width: 90px;
+}
+
+.musicList .title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: #c7c7c7;
+}
+
+.musicList .subTitle {
+  margin: 0;
+  color: #c7c7c7a1;
+}
+
+.textsDiv {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.playArrow span {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 2rem !important;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.song img {
+  width: 400px;
+}
+
+.textAndSymbol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin: 2rem 0;
+  color: #c7c7c7;
+}
+
+.textAndSymbol p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.textAndSymbol p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.textAndSymbol .title {
+  margin-bottom: 1rem;
+  color: #c7c7c7;
+}
+
+.textAndSymbol .subTitle {
+  color: #00000073;
+  color: #c7c7c7a1;
+}
+
+.textAndSymbol span {
+  font-size: 2rem;
+}
+
+.symbolsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbolsDiv span {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #c7c7c7;
+}
+
+.playArrowSpan {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 3rem !important;
+  width: 3rem;
+  height: 3rem;
+  color: black !important;
+}
+
+.ProgressBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  p {
+    color: #c7c7c7;
+    margin: 0 8px;
+  }
+
+  div {
+    flex-grow: 1;
+  }
+}
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .song img {
+    width: 300px;
+  }
+
+  .textAndSymbol {
+    width: 300px;
+  }
+
+  .displayMusic {
+    display: flex;
+  }
+
+  .hideMusic {
+    display: none;
+  }
+
+  .musicList > div {
+    width: 360px;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: #c7c7c7;
+  }
+}
